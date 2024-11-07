@@ -3,33 +3,28 @@ import Link from 'next/link'
 import React from 'react'
 import nav from '../../public/Image/nav.png'
 import Button from '@/utilites/Button'
+import CustomLink from '@/utilites/CustomLink'
 
 const Navbar = () => {
 	return (
-		<div className="flex items-center justify-between w-full px-4 py-2 sm:py-4 lg:px-[300px] lg:py-[32px] bg-gray-900">
-			{/* Logo Section */}
-			<div className="flex items-center gap-4 lg:gap-[60px] text-white">
-				<Link href={'/'} className="flex items-center font-[Poppins]">
-					<Image className="mr-1 sm:mr-[6px]" src={nav} height={37} width={37} alt="arrow" />
-					<p className="font-[600] sm:text-[24px] text-[28.44px] leading-none">Restau</p>
-					<p className="font-[400] sm:text-[24px] text-[28.44px] leading-none">rant</p>
-				</Link>
-			</div>
-
-			{/* Navigation Links */}
-			<div className="hidden md:flex gap-x-[10px] lg:gap-x-[40px] text-white font-[500] text-[14px] md:text-[15px]">
-				<Link href="/">Home</Link>
-				<Link href="/about">About</Link>
-				<Link href="/portfolio">Portfolio</Link>
-				<Link href="/clients">Clients</Link>
-				<Link href="/blog">Blog</Link>
-				<Link href="/contact">Contact</Link>
-			</div>
-
-			{/* Responsive Button */}
-			<div className="block md:hidden">
-				{/* Add a button or icon for mobile menu here if needed */}
-				<Button>Menu</Button>
+		<div className="flex items-center lg:justify-between justify-center w-full px-[20px] py-[30px] sm:px-[20px] md:py-[30px] lg:px-[300px] lg:py-[32px] h-[77px] lg:h-[108px] text-white">
+			<Link href={'/'} className='flex items-center'>
+				<Image src={nav} height={37} width={37} alt='nav' className='mr-2'/>
+				<div className='w-[159px] h-[29px] flex'>
+				<p className="font-['Poppins'] font-[600] text-[28.44px] leading-[28.44px]">Restau</p>
+				<p className="font-['Poppins'] font-[400] text-[28.44px] leading-[28.44px]">rant</p>
+				</div>
+			</Link>
+			<div className='md:flex space-x-5 ml-10 hidden lg:w-[1100px] justify-between items-center'>
+				<div className='flex items-center justify-between w-[484px]'>
+					<CustomLink name={"Home"} href={"/"}/>
+					<CustomLink name={"About"} href={"/"}/>
+					<CustomLink name={"Porfolio"} href={"/"}/>
+					<CustomLink name={"Clients"} href={"/"}/>
+					<CustomLink name={"Blog"} href={"/"}/>
+					<CustomLink name={"Contact"} href={"/"}/>
+				</div>
+				<Button>book a table</Button>
 			</div>
 		</div>
 	)

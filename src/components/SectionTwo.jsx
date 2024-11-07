@@ -44,12 +44,12 @@ const SectionTwo = () => {
 							<Button>About More</Button>
 							<div className='flex'>
 								<CallIcon className='text-[#BD1F17] '/>
-								<p className='text-[18px] font-[700]'>+88 3426 739 485</p>
+								<p className='text-[18px] font-[700] whitespace-nowrap'>+88 3426 739 485</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div className='grid grid-flow-col grid-cols-3 pt-10'>
+				<div className='grid grid-flow-col grid-cols-3 pt-10 sm:grid-rows-3 sm:grid-flow-row'>
 					<SmallComponent icon={<CubeIcon/>} heading="first delivery" paragraph="Within 30 minites"/>
 					<SmallComponent icon={<RewordIcon/>} heading="absolute dining" paragraph="Best buffet restaurant"/>
 					<SmallComponent icon={<ProductIcon/>} heading="pickup delivery" paragraph="Grab your food order"/>

@@ -9,7 +9,7 @@ import CustomHeader from './CustomHeader'
 
 const SectionThree = () => {
 	return (
-		<div className='w-full h-screen bg-red-50  pr-[300px] pb-[120px] pl-[300px] flex justify-center items-center'>
+		<div className='w-full h-screen bg-red-50 pr-[300px] pb-[120px] pl-[300px] flex justify-center items-center'>
 			<div className='w-[1320px] h-[110px] space-y-[32px] '>
 				<CustomHeader header={"POPULAR FOOD ITEMS"}/>
 				<div className='grid justify-between grid-flow-col grid-cols-4 gap-[32px] mb-[50px]'>
