@@ -3,7 +3,7 @@ import burger from '../../public/Image/Section2/burger.png'
 import call from '../../public/Image/call.png'
 import Button from '@/utilites/Button'
 import Image from 'next/image'
-import {CubeIcon, Ellipse10Icon, Ellipse11Icon, Ellipse9Icon, ProductIcon, RewordIcon } from '../../public/Image/icon';
+import {CubeIcon, ProductIcon, RewordIcon } from '../../public/Image/icon';
 import SmallComponent from '@/utilites/SmallComponent';
 import small from '../../public/Image/Ring/small.png'
 import half from '../../public/Image/Ring/half.png'
