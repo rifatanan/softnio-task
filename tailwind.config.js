@@ -1,17 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+    content: [
+        './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+        './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+        './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    ],
+    theme: {
+        extend: {
+            colors: {
+                background: 'var(--background)',
+                foreground: 'var(--foreground)',
+            },
+            fontFamily: {
+                sans: ['Graphik', 'sans-serif'],
+                serif: ['Merriweather', 'serif'],
+                Bebas_Neue: ['"Bebas Neue"'],
+                roboto: ['"roboto"'],
+            },
+        },
     },
-  },
-  plugins: [],
+    plugins: [],
 };

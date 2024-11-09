@@ -7,7 +7,7 @@ import CustomLink from '@/utilites/CustomLink'
 
 const Navbar = () => {
 	return (
-		<div className="flex items-center lg:justify-between justify-center w-full px-[20px] py-[30px] sm:px-[20px] md:py-[30px] lg:px-[300px] lg:py-[32px] h-[77px] lg:h-[108px] text-white">
+		<div className="flex items-center justify-between w-full px-[20px] py-[30px] sm:px-[20px] md:py-[30px] lg:px-[300px] lg:py-[32px] h-[77px] lg:h-[108px] text-white">
 			<Link href={'/'} className='flex items-center'>
 				<Image src={nav} height={37} width={37} alt='nav' className='mr-2'/>
 				<div className='w-[159px] h-[29px] flex'>
