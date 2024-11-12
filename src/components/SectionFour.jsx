@@ -47,11 +47,6 @@ const SectionFour = () => {
 			total: data.get('total'),
 			message: data.get('message')
 		}
-		console.log('log: '+newTodo.name);
-		console.log('log: '+newTodo.email);
-		console.log('log: '+newTodo.date);
-		console.log('log: '+newTodo.total);
-		console.log('log: '+newTodo.message);
 	}
 
 	return (
