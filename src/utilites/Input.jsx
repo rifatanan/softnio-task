@@ -1,14 +1,14 @@
 import React from 'react'
 
-const Input = ({placeholder,type}) => {
+const Input = ({name,type,placeholder}) => {
 	return (
 		<input
+			name={name}
 			type={type}
-			className='w-full p-2 py-3 mb-3 text-black border-gray-100 border-none rounded outline-none appearance-none ring-1 focus:outline-none'
 			placeholder={placeholder}
+			className='w-full px-[16px] py-[12px] font-roboto font-[400] text-[14px] leading-[22px] focus:outline-none border-[1px] bg-transparent'
 			required
 		/>
-
 	)
 }
 
